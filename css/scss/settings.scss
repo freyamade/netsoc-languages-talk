@@ -1,0 +1,46 @@
+// Base settings for all themes that can optionally be
+// overridden by the super-theme
+
+// Background of the presentation
+$rubyColor: #701516;
+$crystalColor: #776791;
+$midpointColor: #743E54;
+$backgroundColor: #002366;
+
+// Primary/body text
+$mainFont: 'Raleway';
+$mainFontSize: 40px;
+$mainColor: #d4def6;
+
+// Vertical spacing between blocks of text
+$blockMargin: 20px;
+
+// Headings
+$headingMargin: 0 0 $blockMargin 0;
+$headingFont: 'Raleway';
+$headingColor: #002366;
+$headingLineHeight: 1.2;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingTextShadow: none;
+$headingFontWeight: normal;
+$heading1TextShadow: $headingTextShadow;
+
+$heading1Size: 3.77em;
+$heading2Size: 2.11em;
+$heading3Size: 1.55em;
+$heading4Size: 1.00em;
+
+// Links and actions
+$linkColor: $midpointColor;
+$linkColorHover: darken( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: #6A81AE;
+$selectionColor: #002366;
+
+// Generates the presentation background, can be overridden
+// to return a background image or gradient
+@mixin bodyBackground() {
+	background-image: linear-gradient(to bottom right, $rubyColor, $crystalColor);
+}

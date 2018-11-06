@@ -18,4 +18,3 @@ Each language will contain the following subsections;
 2. How to install
 3. Some playground stuff
 4. Pros and Cons
-5. What it's used for

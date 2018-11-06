@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Languages They Don't Teach You In College</title>
+
+        <!-- Materialize -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <!-- Title Slide -->
+                <section>
+                    <div class="card midpoint z-depth-5">
+                        <div class="card-content">
+                            <div class="row">
+                                <div class="col s12">
+                                    <p>Languages you don't learn in College</p>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col s6">
+                                    <img class="borderless" width="198" height="198" src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" />
+                                </div>
+                                <div class="col s6">
+                                    <img class="borderless" width="198" height="198" src="https://crystal-lang.org/assets/media/crystal_icon.svg" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <p>Ciaran Broderick, Ex-Officio</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Roadmap -->
+                <section>
+                    <div class="card midpoint z-depth-5">
+                        <div class="card-content">
+                            <table class="table">
+                                <tr class="fragment">
+                                    <th>Part 1</th>
+                                    <td>Syntax</td>
+                                </tr>
+                                <tr class="fragment">
+                                    <th>Part 2</th>
+                                    <td>How to Install</td>
+                                </tr>
+                                <tr class="fragment">
+                                    <th>Part 3</th>
+                                    <td>Playground</td>
+                                </tr>
+                                <tr class="fragment">
+                                    <th>Part 4</th>
+                                    <td>Pros &amp; Cons</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="card-action">
+                            <p>Roadmap</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Ruby -->
+                <section data-background-color="#701516">
+                    <div class="card ruby z-depth-5">
+                        <div class="card-content">
+                            <div class="row">
+                                <div class="col s12">
+                                    <blockquote>
+                                        Ruby is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <p>Ruby</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- /Ruby-->
+
+                <!-- Crystal -->
+                <section data-background-color="#776791">
+                    <div class="card crystal z-depth-5">
+                        <div class="card-content">
+                            <div class="row">
+                                <div class="col s12">
+                                    <blockquote>
+                                        Fast as C, slick as Ruby
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <p>Crystal</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- /Crystal -->
+
+                <section>
+                    <div class="card midpoint z-depth-5">
+                        <div class="card-content">
+                            What are your questions?
+                            <pre><code data-trim data-language="ruby">
+                                your_questions.each do |question|
+                                  self.answer question
+                                end
+                            </code></pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="card midpoint z-depth-5">
+                        <div class="card-image">
+                            <img src="https://coffeeconnectionhilliard.files.wordpress.com/2016/05/thank-you-1400x800-c-default.gif" alt="Thanks for listening" />
+                        </div>
+                        <div class="card-content">
+                            <p>crnlpanic.netsoc.co/techtalks/languages</p>
+                            <p>github.com/crnbrdrck/netsoc-languages-talk</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                controls: true,
+                history: true,
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
+</html>
