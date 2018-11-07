@@ -249,9 +249,6 @@
                                             [1, 2, 3]
                                             >>> puts(l.empty?())
                                             false
-                                            >>> l = []
-                                            >>> puts(l.empty?())
-                                            true
                                         </code></pre>
                                     </div>
                                 </div>
@@ -269,6 +266,7 @@
                                         <p>1.1.6 Sugar</p>
                                         <pre><code data-trim data-language="ruby" class="fragment">
                                             # Extra cool operators
+                                            x = 2
                                             unless x == 1  # if x != 1
                                               puts "X is not equal to 1"
                                             end
@@ -276,21 +274,21 @@
 
                                         <pre><code data-trim data-language="ruby" class="fragment">
                                             # Optional return statement
-                                            def returns()
+                                            def optional_returns()
                                               2
                                             end
 
-                                            >>> puts(returns())
+                                            >>> puts(optional_returns())
                                             2
                                         </code></pre>
 
                                         <pre><code data-trim data-language="ruby" class="fragment">
                                             # Optional parentheses
-                                            def hello_with_name(name)
+                                            def hello_without_parens(name)
                                               "Hello, #{name}"
                                             end
 
-                                            >>> puts hello "Netsoc"
+                                            >>> puts hello_without_parens "Netsoc"
                                             Hello, Netsoc!
                                         </code></pre>
                                     </div>
@@ -319,7 +317,7 @@
                                         # Arch
                                         $ sudo pacman -S ruby
                                         # MacOS
-                                        $ sudo brew install ruby
+                                        $ brew install ruby
                                     </code></pre>
                                 </div>
                             </div>
@@ -405,11 +403,171 @@
                             </div>
                         </div>
                         <div class="card-action">
-                            <p>Crystal</p>
+                            <p>2. Crystal</p>
                         </div>
                     </div>
                 </section>
 
+                <!-- Crystal.Syntax -->
+                <section data-background-color="#776791">
+                    <section>
+                        <div class="card crystal z-depth-5">
+                            <div class="card-content">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <p>2.1 Syntax</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Crystal.Syntax.Types -->
+                    <section>
+                        <div class="card crystal z-depth-5">
+                            <div class="card-content">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <p>2.1.1 Type Definitions</p>
+                                        <pre><code data-trim data-language="ruby">
+                                            def get_two : Int32
+                                              return 2
+                                            end
+
+                                            x = get_two
+                                            y : (Int32 | Nil) = nil
+                                        </code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /Crystal.Syntax.Functions -->
+
+                    <!-- Crystal.Syntax.Macroes -->
+                    <section>
+                        <div class="card crystal z-depth-5">
+                            <div class="card-content">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <p>2.1.2 Macros</p>
+                                        <pre><code data-trim data-language="crystal">
+                                            macro make_method(name, message)
+                                              def {{name}}
+                                                puts {{message}}
+                                              end
+                                            end
+
+                                            make_method netsoc_crystal, "Crystal is cool!"
+                                            # def netsoc_crystal
+                                            #   puts "Crystal is cool!"
+                                            # end
+                                        </code></pre>
+
+                                        <pre><code data-trim>
+                                            >>> netsoc_crystal
+                                            Crystal is cool!
+                                        </code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /Crystal.Syntax.Macroes -->
+                </section>
+                <!-- /Crystal.Syntax -->
+
+                <!-- Crystal.Install -->
+                <section data-background-color="#776791">
+                    <div class="card crystal z-depth-5">
+                        <div class="card-content">
+                            <p>2.2 How to Install</p>
+                            <div class="row">
+                                <div class="col s12">
+                                    <pre><code data-trim data-language="bash">
+                                        # Ubuntu / Debian
+                                        $ curl -sSL https://dist.crystal-lang.org/apt/setup.sh | sudo bash
+                                        # CentOS / Fedora / RHEL
+                                        $ curl https://dist.crystal-lang.org/rpm/setup.sh | sudo bash
+                                        # Gentoo
+                                        $ sudo emerge -a dev-lang/crystal
+                                        # Arch
+                                        $ sudo pacman -S crystal shards
+                                        # MacOS
+                                        $ brew install crystal
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /Crystal.Install -->
+
+                <!-- Crystal.Playground -->
+                <section data-background-color="#776791">
+                    <div class="card crystal z-depth-5">
+                        <div class="card-content">
+                            <p>2.3 Playground</p>
+                            <br />
+                            <div class="row">
+                                <div class="col s12">
+                                    I put all my code in <a href="https://play.crystal-lang.org/#/r/5gfu">here</a> for anyone to mess around with!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /Crystal.Playground -->
+
+                <!-- Crystal.Pros+Cons -->
+                <section data-background-color="#776791">
+                    <!-- Crystal.Pros+Cons.Pros -->
+                    <section>
+                        <div class="card crystal z-depth-5">
+                            <div class="card-content">
+                                <table class="table">
+                                    <tr class="fragment">
+                                        <td>All Ruby pros</td>
+                                    </tr>
+                                    <tr class="fragment">
+                                        <td>Static typing and compile time type checking</td>
+                                    </tr>
+                                    <tr class="fragment">
+                                        <td>Faster than Ruby (and a good few others) (<a href="https://crystal-lang.org/2016/07/15/fibonacci-benchmark.html">beware</a>)</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-action">
+                                <p>2.4.1 Pros</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /Crystal.Pros+Cons.Pros -->
+
+                    <!-- Crystal.Pros+Cons.Cons -->
+                    <section>
+                        <div class="card crystal z-depth-5">
+                            <div class="card-content">
+                                <table class="table">
+                                    <tr class="fragment">
+                                        <td>Not fully released yet, regular breaking changes</td>
+                                    </tr>
+                                    <tr class="fragment">
+                                        <td>Multiprocessing isn't fully working yet</td>
+                                    </tr>
+                                    <tr class="fragment">
+                                        <td>No Windows support</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-action">
+                                <p>2.4.2 Cons</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /Crystal.Pros+Cons.Cons -->
+                </section>
+                <!-- /Crystal.Pros+Cons -->
                 <!-- /Crystal -->
 
                 <section>
@@ -417,6 +575,7 @@
                         <div class="card-content">
                             What are your questions?
                             <pre><code data-trim data-language="ruby">
+                                your_questions = [] of Questions
                                 your_questions.each do |question|
                                   self.answer question
                                 end
