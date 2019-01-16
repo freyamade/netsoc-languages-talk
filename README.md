@@ -1,4 +1,4 @@
-# Languages you don't learn in College
+# Languages you don't learn in College: Ruby and Crystal
 
 ![title slide](https://raw.githubusercontent.com/crnbrdrck/netsoc-languages-talk/master/title.png)
 
