@@ -1,4 +1,6 @@
-# Languages you don't learn in College
+# Languages you don't learn in College: Ruby and Crystal
+
+![title slide](https://raw.githubusercontent.com/crnbrdrck/netsoc-languages-talk/master/title.png)
 
 ## Ruby
 Ruby is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.
