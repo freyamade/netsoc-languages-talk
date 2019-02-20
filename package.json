@@ -1,18 +1,18 @@
 {
   "name": "netsoc-languages-talk",
   "version": "1.0.0",
-  "description": "Slides for my part of the Netsoc Langs talk, on Ruby and Crystal.",
-  "homepage": "http://crnlpanic.netsoc.co/techtalks/languages",
+  "description": "netsoc languages talk 2018",
+  "homepage": "http://freyamade.netsoc.co/techtalks/languages",
   "scripts": {
     "build": "node-sass css/scss/theme.scss css/theme.css"
   },
   "author": {
-    "name": "Ciaran Broderick",
-    "web": "http://crnbrdrck.xyz"
+    "name": "freyamade",
+    "web": "http://freyamade.netsoc.co"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/crnbrdrck/netsoc-languages-talk.git"
+    "url": "git://github.com/freyamade/netsoc-languages-talk.git"
   },
   "devDependencies": {
     "node-sass": "^4.9.3"
