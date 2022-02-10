@@ -15,7 +15,7 @@
     "url": "git://github.com/freyamade/netsoc-languages-talk.git"
   },
   "devDependencies": {
-    "node-sass": "^4.9.3"
+    "node-sass": "^7.0.0"
   },
   "license": "MIT"
 }
